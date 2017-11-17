@@ -1624,10 +1624,10 @@
 
 	body {
 		background-color: #ffffff;
-		background-image: url("images/overlay.png"), -moz-radial-gradient(#343434 23%, rgb(255, 255, 255));
-		background-image: url("images/overlay.png"), -webkit-radial-gradient(#343434 23%, rgb(255, 255, 255));
-		background-image: url("images/overlay.png"), -ms-radial-gradient(#343434 23%, rgb(255, 255, 255));
-		background-image: url("images/overlay.png"), radial-gradient(#343434 23%, rgb(255, 255, 255));
+		background-image: url("images/overlay.png"), -moz-radial-gradient(#343434 23%, rgb(200, 200, 200));
+		background-image: url("images/overlay.png"), -webkit-radial-gradient(#343434 23%, rgb(200, 200, 200));
+		background-image: url("images/overlay.png"), -ms-radial-gradient(#343434 23%, rgb(200, 200, 200));
+		background-image: url("images/overlay.png"), radial-gradient(#343434 23%, rgb(200, 200, 200));
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1644,12 +1644,12 @@
 /* Type */
 
 	body {
-		background-color: #935d8c;
-		color: #111111;
+		background-color: rgba(255, 255, 255, 0);
+		color: #ffffff;
 	}
 
 	body, input, select, textarea {
-		font-family: "CircularStd-Book", Arial, Helvetica, sans-serif;
+		font-family: "CircularStd-Book", Helvetica, sans-serif;
 		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -1719,7 +1719,7 @@
 		}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'CircularStd-Medium';
+		font-family: 'CircularStd-Medium', Helvetica, sans-serif;
 		font-weight: 300;
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
@@ -3238,13 +3238,13 @@
 		-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-		background-color: #ffffff;
-		color: #636363;
+		background-color: rgba(255, 255, 255, 0);
+		color: #ffffff;
 		position: absolute;
-		width: 64em;
-		max-width: calc(100% - 4em);
+		left: 0;
+		right: 0;
+		max-width: 100%;
 		padding: 1em;
-		background-color: #f7f7f7;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
@@ -3252,19 +3252,19 @@
 	}
 
 		#nav input, #nav select, #nav textarea {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#nav a:hover {
-			color: #636363;
+			background-color: rgba(255, 255, 255, 0.15);
 		}
 
 		#nav strong, #nav b {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#nav blockquote {
@@ -3320,7 +3320,7 @@
 					}
 
 					#nav ul li a.active {
-						background-color: #ffffff;
+						background-color: rgba(255, 255, 255, 0.15);
 						box-shadow: none;
 					}
 
@@ -3328,7 +3328,7 @@
 			position: fixed;
 			top: 0;
 			padding: 0.5em 1em;
-			background-color: rgba(247, 247, 247, 0.95);
+			background-color: rgba(0, 0, 0, .95);
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
@@ -3357,25 +3357,25 @@
 /* Main */
 
 	#main {
-		background-color: #ffffff;
-		color: #636363;
+		background-color: rgba(255, 255, 255, 0);
+		color: #ffffff;
 		border-radius: 0.25em;
 	}
 
 		#main input, #main select, #main textarea {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main a:hover {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main strong, #main b {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main blockquote {
@@ -3402,7 +3402,7 @@
 		#main .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 1px #dddddd;
-			color: #636363 !important;
+			color: #ffffff !important;
 		}
 
 			#main input[type="submit"]:hover,
@@ -3464,7 +3464,7 @@
 				}
 
 		#main label {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main input[type="text"],
@@ -3491,7 +3491,7 @@
 
 		#main input[type="checkbox"] + label,
 		#main input[type="radio"] + label {
-			color: #636363;
+			color: #ffffff;
 		}
 
 			#main input[type="checkbox"] + label:before,
@@ -3502,8 +3502,8 @@
 
 		#main input[type="checkbox"]:checked + label:before,
 		#main input[type="radio"]:checked + label:before {
-			background-color: #636363;
-			border-color: #636363;
+			background-color: #ffffff;
+			border-color: #ffffff;
 			color: #ffffff;
 		}
 
@@ -3543,7 +3543,7 @@
 
 		#main .icon.alt {
 			border-color: #dddddd;
-			color: #636363;
+			color: #ffffff;
 		}
 
 			#main .icon.alt:hover {
@@ -3559,11 +3559,11 @@
 		}
 
 		#main dl dt {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main header.major h2:after {
-			background-color: #8e8e8e;
+			background-color: #ffffff;
 		}
 
 		#main table tbody tr {
@@ -3575,7 +3575,7 @@
 			}
 
 		#main table th {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main table thead {
@@ -3591,7 +3591,7 @@
 		}
 
 		#main .spotlight .image {
-			border-color: #dddddd;
+
 		}
 
 		#main > .main {
@@ -3806,7 +3806,7 @@
 		}
 
 		#main footer, header {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		.components{
@@ -3847,7 +3847,7 @@
 
 		.statistics-header {
 			text-transform: uppercase;
-			font-family: "CircularStd-Medium";
+			font-family: "CircularStd-Medium", Helvetica, sans-serif;
 			font-size: 1rem;
 			letter-spacing: .1rem;
 			margin-top: 4rem;
@@ -3855,7 +3855,7 @@
 		}
 
 		.style {
-			background: #ffffff;
+			background: rgba(255, 255, 255, 0);
 		}
 
 		.sample img {
@@ -3865,4 +3865,19 @@
 
 		.available {
 			padding-right: 3rem;
+		}
+
+		#third {
+			border-bottom: 1px solid white;
+		}
+
+		.custom-logo {
+			border: 0 !important;
+			width: 4.2rem !important;
+			margin: 0 auto  !important;
+		}
+
+		.redux {
+			width: 4rem !important;
+			margin-bottom: 1.9rem !important;
 		}
