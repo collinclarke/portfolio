@@ -3832,6 +3832,7 @@
 
 		i.biggish {
 			font-size: 3.5rem;
+			margin-bottom: 2rem;
 		}
 		i.big::before {
 			margin-bottom: 1rem;
@@ -3880,4 +3881,8 @@
 		.redux {
 			width: 4rem !important;
 			margin-bottom: 1.9rem !important;
+		}
+
+		#rails {
+			margin-top: 1.5rem !important;
 		}
