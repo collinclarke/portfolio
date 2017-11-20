@@ -1649,11 +1649,11 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "CircularStd-Book", Helvetica, sans-serif;
+		font-family: "Karla", Helvetica, sans-serif;
 		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.65;
-		letter-spacing: 0.02rem;
+		letter-spacing: 0.01rem;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1719,9 +1719,10 @@
 		}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'CircularStd-Medium', Helvetica, sans-serif;
-		font-weight: 300;
+		font-family: 'Karla', Helvetica, sans-serif;
+		font-weight: bolder;
 		line-height: 1.5;
+		letter-spacing: 0;
 		margin: 0 0 0.7em 0;
 	}
 
@@ -1733,6 +1734,7 @@
 	h1 {
 		font-size: 2.5em;
 		line-height: 1.2;
+		letter-spacing: -0.15rem;
 	}
 
 	h2 {
@@ -1785,7 +1787,7 @@
 	code {
 		border-radius: 8px;
 		border: solid 1px;
-		font-family: "GT-Pressura-Mono", monospace;
+		font-family: "Roboto Mono", monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -1793,7 +1795,7 @@
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "GT-Pressura-Mono", monospace;
+		font-family: "Roboto Mono", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -3848,11 +3850,22 @@
 
 		.statistics-header {
 			text-transform: uppercase;
-			font-family: "CircularStd-Medium", Helvetica, sans-serif;
-			font-size: 1rem;
-			letter-spacing: .1rem;
+			font-family: "Karla", Helvetica, sans-serif;
+			font-size: .9rem;
+			text-align: center;
+			letter-spacing: .15rem;
 			margin-top: 4rem;
 			margin-bottom: 1rem;
+		}
+
+		.statistics-header:after {
+			display: block;
+			content: '';
+			width: 8rem;
+			height: 1px;
+			margin: 1rem auto;
+			border-radius: 2px;
+			background-color: rgb(154, 154, 154);
 		}
 
 		.style {
